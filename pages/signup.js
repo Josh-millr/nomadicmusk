@@ -1,3 +1,3 @@
-export default function Home() {
+export default function SignIp() {
   return <div className=""></div>;
 }
