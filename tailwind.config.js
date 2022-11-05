@@ -3,8 +3,6 @@ module.exports = {
   content: [
     // Flowbite dependency file path
     "./node_modules/flowbite-react/**/*.js",
-    "./pages/**/*.{ts,tsx}",
-    "./public/**/*.html",
 
     //General file path
     "./app/**/*.{js,ts,jsx,tsx}",

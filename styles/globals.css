@@ -5,9 +5,28 @@
 @tailwind utilities;
 
 @layer utilities {
-  html,
-  body {
-    font-family: "Inter", sans-serif;
-    font-family: "Space Grotesk", sans-serif;
+  :root {
+    --font-stack: Helvetica, Arial, Helvetica Neue, Avant Garde, Avantgarde,
+      Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Space Grotesk", var(--font-stack);
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 28px;
+    font-weight: normal;
+  }
+
+  p {
+    font-family: "Inter", var(--font-stack);
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 20px;
+    font-weight: normal;
   }
 }
