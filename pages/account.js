@@ -8,7 +8,7 @@ import {
 
 export default function Account() {
   return (
-    <div className="mx-auto grid w-full grid-cols-1 grid-rows-1 gap-y-[40px] gap-x-5 px-[24px] py-[24px] md:grid-cols-2">
+    <div className="md:overflow-hidden md:fixed md:h-[100vh] mx-auto grid w-full grid-cols-1 grid-rows-1 gap-y-[40px] gap-x-5 px-[24px] py-[24px] md:grid-cols-2">
       <div className="grid grid-cols-1 grid-rows-1 gap-y-[16px] pt-[32px] md:h-fit">
         <div className="grid grid-cols-1 grid-rows-1 justify-items-center gap-y-[16px]">
           <Avatar />
@@ -30,7 +30,7 @@ export default function Account() {
       </div>
 
       {/* Content store */}
-      <div className="md:h-[100vh] md:border-l-[1px] md:border-[#2f3238]">
+      <div className="md:overflow-y-scroll md:border-l-[1px] md:border-[#2f3238]">
         <div className="border-b-[2px] border-[#151424] dark:border-gray-700 md:ml-[32px]">
           <ul className="-mb-px flex flex-wrap place-content-evenly content-evenly justify-evenly  text-center text-sm font-medium text-gray-500 dark:text-gray-400">
             <li className="">

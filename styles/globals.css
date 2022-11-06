@@ -22,6 +22,10 @@
     background-color: #02010f;
     overflow-x: hidden;
   }
+  
+  body {
+    overflow-y: hidden;
+  }
 
   h1,
   h2,
