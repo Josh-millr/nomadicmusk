@@ -1,6 +1,16 @@
+import React, { useState } from "react";
+import axios from "axios";
 import { FormInput, Checkbox, Button } from "../components/index";
 
 export default function SignIn() {
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null);
+
+  const sendCredentials = (e) => {
+    e.prevertDefault();
+    console.log("sent credentials to server successfully...");
+  };
+
   return (
     <div className="grid w-full grid-cols-1 grid-rows-1 justify-items-center gap-y-[40px] py-[16vh] px-[24px] sm:grid sm:justify-center">
       <div className="grid grid-cols-1 grid-rows-1 justify-items-center  gap-y-[8px]">
@@ -9,14 +19,16 @@ export default function SignIn() {
           Sign in to the platform to get started
         </p>
       </div>
-      <form className="grid-row-1 grid w-full grid-cols-1 justify-items-center sm:w-[420px]">
+      <form
+        onSubmit={(e) => sendCredentials(e)}
+        className="grid-row-1 grid w-full grid-cols-1 justify-items-center sm:w-[420px]"
+      >
         <div className="mb-[16px] w-full">
           <FormInput
             label="Your Email"
             type="email"
             placeholder="email@gmail.com"
-            required={true}
-            getValue={(value) => console.log(value)}
+            getValue={(value) => setEmail(value)}
           />
         </div>
         <div className="mb-[16px] w-full">
@@ -24,14 +36,13 @@ export default function SignIn() {
             label="Your Password"
             type="password"
             placeholder="Your password"
-            required={true}
-            getValue={(value) => console.log(value)}
+            getValue={(value) => setPassword(value)}
           />
         </div>
         <div className="mb-[16px] w-full">
           <Checkbox label="Remember me" />
         </div>
-        <Button.Default label="Submit" />
+        <Button.Default type="primary" label="Submit" />
       </form>
     </div>
   );

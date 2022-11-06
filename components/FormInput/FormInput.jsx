@@ -13,7 +13,7 @@ export const FormInput = ({ type, placeholder, required, getValue, label }) => {
         type={type}
         placeholder={placeholder}
         required={required}
-        getValue={getValue}
+        getValue={(value) => getValue(value)}
       />
     </div>
   );

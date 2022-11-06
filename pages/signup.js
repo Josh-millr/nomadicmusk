@@ -1,6 +1,18 @@
-import { FormInput, Checkbox, Button } from "../components/index";
+import React, { useState } from "react";
+import { FormInput, Button } from "../components/index";
 
 export default function SignUp() {
+  const [email, setEmail] = useState(null);
+  const [username, setUsername] = useState(null);
+  const [password, setPassword] = useState(null);
+  const [lastname, setLastname] = useState(null);
+  const [firstname, setFirstname] = useState(null);
+
+  const [passwordCopy1, setPasswordCopy1] = useState(null);
+  const [passwordCopy2, setPasswordCopy2] = useState(null);
+
+  const validatePassword = () => {};
+
   return (
     <div className="grid w-full grid-cols-1 grid-rows-1 justify-items-center gap-y-[40px] py-[16vh] px-[24px] sm:grid sm:justify-center">
       <div className="grid grid-cols-1 grid-rows-1 justify-items-center  gap-y-[8px]">
@@ -9,21 +21,24 @@ export default function SignUp() {
           Sign up to the platform to get started
         </p>
       </div>
-      <form className="grid-row-1 grid w-full grid-cols-1 justify-items-center sm:w-[420px]">
-      <div className="mb-[16px] w-full flex gap-x-[8px]">
+      <form
+        onSubmit={(e) => e.prevertDefault()}
+        className="grid-row-1 grid w-full grid-cols-1 justify-items-center sm:w-[420px]"
+      >
+        <div className="mb-[16px] flex w-full gap-x-[8px]">
           <FormInput
             label="Firstname"
             type="text"
             placeholder="adamu"
             required={true}
-            getValue={(value) => console.log(value)}
+            getValue={(value) => setFirstname(value)}
           />
           <FormInput
             label="Lastname"
             type="text"
             placeholder="musa"
             required={true}
-            getValue={(value) => console.log(value)}
+            getValue={(value) => setLastname(value)}
           />
         </div>
         <div className="mb-[16px] w-full">
@@ -32,7 +47,7 @@ export default function SignUp() {
             type="text"
             placeholder="your username"
             required={true}
-            getValue={(value) => console.log(value)}
+            getValue={(value) => setUsername(value)}
           />
         </div>
         <div className="mb-[16px] w-full">
@@ -41,26 +56,26 @@ export default function SignUp() {
             type="email"
             placeholder="email@gmail.com"
             required={true}
-            getValue={(value) => console.log(value)}
+            getValue={(value) => setEmail(value)}
           />
         </div>
-        <div className="mb-[16px] w-full flex gap-x-[8px]">
+        <div className="mb-[16px] flex w-full gap-x-[8px]">
           <FormInput
             label="Password"
             type="password"
             placeholder="Your password"
             required={true}
-            getValue={(value) => console.log(value)}
+            getValue={(value) => setPasswordCopy1(value)}
           />
           <FormInput
             label="Re-type Password"
             type="password"
             placeholder="Your password"
             required={true}
-            getValue={(value) => console.log(value)}
+            getValue={(value) => setPasswordCopy2(value)}
           />
         </div>
-        <Button.Default label="Submit" />
+        <Button.Default type="primary" label="Submit" />
       </form>
     </div>
   );

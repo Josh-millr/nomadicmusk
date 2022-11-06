@@ -8,3 +8,6 @@ export { Button } from "./UI/Button/Button";
 export { Logo } from "./UI/Logo/Logo";
 export { TextInput } from "./UI/TextInput/TextInput";
 export { Checkbox } from "./UI/Checkbox/Checkbox";
+export { Avatar } from "./UI/Avatar/Avatar";
+
+export { BiAddToQueue, BiWallet, BiCloudUpload } from "react-icons/bi";
