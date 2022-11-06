@@ -12,11 +12,15 @@
 
   html,
   body {
+    /* Global Font properties */
     font-family: "Inter", var(--font-stack);
     font-stretch: normal;
     font-style: normal;
     font-variant: normal;
-    background-color:#02010f;
+
+    /* Other global properties */
+    background-color: #02010f;
+    overflow-x: hidden;
   }
 
   h1,
