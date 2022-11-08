@@ -18,7 +18,6 @@ export default function Account() {
         </div>
 
         <div className="mx-auto flex justify-center">
-          {/* Upload content button */}
           <Button.Default type="primary" label="Upload content" />
         </div>
       </div>

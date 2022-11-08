@@ -36,15 +36,15 @@ export const ContentStore = () => {
   ];
 
   return (
-    <div className=" grid grid-cols-1 md:overflow-y-scroll md:border-l-[1px] md:border-[#2f3238]">
-      <div className="h-fit border-b-[2px] border-[#151424] dark:border-gray-700 md:ml-[32px]">
+    <div className="md:overflow-y-scroll md:border-l-[1px] md:border-[#2f3238]">
+      <div className="h-fit border-b-[2px] border-[#151424] dark:border-gray-700 md:mx-[24px]">
         <Tab
           navItems={navItem}
           mountStore={setCurrentSection}
           activeSection={currentSection}
         />
       </div>
-      <div className="text-white">
+      <div className="text-white md:px-[24px] py-[24px]">
         {navItem.map(
           ({ label, section }) => currentSection === label && section
         )}
