@@ -10,8 +10,7 @@
       Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   }
 
-  html,
-  body {
+  html, body {
     /* Global Font properties */
     font-family: "Inter", var(--font-stack);
     font-stretch: normal;
@@ -27,9 +26,7 @@
     overflow-y: hidden;
   }
 
-  h1,
-  h2,
-  h3 {
+  h1, h2, h3 {
     font-family: "Space Grotesk", var(--font-stack);
     font-stretch: normal;
     font-style: normal;
@@ -37,8 +34,8 @@
     line-height: 28px;
     font-weight: normal;
   }
-
-  p {
+/* "Circular Std" */
+  p, label, button, input, li {
     font-family: "Inter", var(--font-stack);
     font-stretch: normal;
     font-style: normal;

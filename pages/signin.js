@@ -5,10 +5,15 @@ import { FormInput, Checkbox, Button } from "../components/index";
 export default function SignIn() {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
+  const [presistSignin, setPresistSignin] = useState(null);
 
-  const sendCredentials = (e) => {
-    e.prevertDefault();
-    console.log("sent credentials to server successfully...");
+  // const validateEmail = (email) => {
+  // TODO: Use regular expression to test if the email is in it's correct format
+  // };
+
+  const submitSigninForm = async (e) => {
+    e.preventDefault();
+    // Send the email credentials to the server for login authentication
   };
 
   return (
@@ -20,7 +25,7 @@ export default function SignIn() {
         </p>
       </div>
       <form
-        onSubmit={(e) => sendCredentials(e)}
+        onSubmit={submitSigninForm}
         className="grid-row-1 grid w-full grid-cols-1 justify-items-center sm:w-[420px]"
       >
         <div className="mb-[16px] w-full">
