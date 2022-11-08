@@ -3,10 +3,13 @@ import {
   BiWallet,
   BiCloudUpload,
   Tab,
+  BiCart,
   Purchased,
   Uploaded,
   Selling,
   Sold,
+  BiDollarCircle,
+  BiDonateHeart,
 } from "../index";
 
 export const ContentStore = () => {
@@ -20,31 +23,31 @@ export const ContentStore = () => {
     },
     {
       label: "Purchased",
-      icon: <BiWallet size={20} />,
+      icon: <BiCart size={20} />,
       section: <Purchased />,
     },
     {
       label: "Selling",
-      icon: <BiWallet size={20} />,
+      icon: <BiDollarCircle size={20} />,
       section: <Selling />,
     },
     {
       label: "Sold",
-      icon: <BiWallet size={20} />,
+      icon: <BiDonateHeart size={20} />,
       section: <Sold />,
     },
   ];
 
   return (
-    <div className="md:overflow-y-scroll md:border-l-[1px] md:border-[#2f3238]">
-      <div className="h-fit border-b-[2px] border-[#151424] dark:border-gray-700 md:mx-[24px]">
+    <div className="text-gray-900 md:overflow-y-scroll md:border-l md:border-slate-200">
+      <div className="h-fit border-b border-slate-300 dark:border-gray-700 md:mx-6">
         <Tab
           navItems={navItem}
           mountStore={setCurrentSection}
           activeSection={currentSection}
         />
       </div>
-      <div className="text-white md:px-[24px] py-[24px]">
+      <div className="py-6 md:px-6">
         {navItem.map(
           ({ label, section }) => currentSection === label && section
         )}

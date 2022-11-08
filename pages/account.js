@@ -2,15 +2,15 @@ import { ContentStore, Avatar, Button, BiAddToQueue } from "../components/index"
 
 export default function Account() {
   return (
-    <div className="xl:w-[1280px] mx-auto grid grid-cols-1 grid-rows-1 gap-y-[40px] gap-x-5 px-[24px] py-[24px] md:fixed md:h-[100vh] md:grid-cols-2 md:overflow-hidden">
-      <div className="grid grid-cols-1 grid-rows-1 gap-y-[16px] pt-[32px] md:h-fit">
-        <div className="grid grid-cols-1 grid-rows-1 justify-items-center gap-y-[16px]">
+    <div className="text-gray-900 xl:w-[1280px] mx-auto grid grid-cols-1 grid-rows-1 gap-y-10 gap-x-5 px-6 py-[24px] md:fixed md:h-[100vh] md:grid-cols-2 md:overflow-hidden">
+      <div className="grid grid-cols-1 grid-rows-1 gap-y-4 pt-[32px] md:h-fit">
+        <div className="grid grid-cols-1 grid-rows-1 justify-items-center gap-y-4">
           <Avatar />
-          <p className="text-sm text-white">joshmillr</p>
+          <p className="text-sm">joshmillr</p>
         </div>
 
         <div className="grid grid-cols-1 grid-rows-1 justify-items-center">
-          <div className="flex w-fit gap-x-[8px] rounded-full bg-white p-[16px]">
+          <div className="flex w-fit gap-x-2 rounded-full bg-gray-100 p-4 border border-gray-300">
             {/* wallet address */}
             <p className="text-sm font-bold">x023SJD72I...</p>
             <BiAddToQueue size={20} />

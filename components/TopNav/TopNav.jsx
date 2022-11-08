@@ -12,13 +12,13 @@ export const TopNav = () => {
     currRoute === "/" || currRoute === "/signup" ? "sign in" : "sign up";
 
   return (
-    <nav className="fixed top-0 left-0 z-20 w-full border-b-[2px] border-gray-900 bg-[#02010f] px-6 py-2.5 dark:border-gray-600 dark:bg-gray-900 sm:px-4">
+    <nav className="fixed top-0 left-0 z-20 w-full border-b border-slate-200 bg-white px-6 py-2.5 sm:px-4">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <Link href="/">
-          <Logo width="24" height="24" color="white" />
+          <Logo width="24" height="24" color="blue" />
         </Link>
-        <div className="flex items-center gap-x-[16px] md:order-2">
-          <p className="hidden text-[12px] text-white sm:block">
+        <div className="flex items-center gap-x-4 md:order-2">
+          <p className="hidden text-xs text-black sm:block">
             {currRoute === "/" || currRoute === "/signup"
               ? "Already have an account?"
               : "Dont have an account?"}

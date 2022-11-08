@@ -14,10 +14,10 @@ export default function SignUp() {
   const validatePassword = () => {};
 
   return (
-    <div className="grid w-full grid-cols-1 grid-rows-1 justify-items-center gap-y-[40px] py-[16vh] px-[24px] sm:grid sm:justify-center">
-      <div className="grid grid-cols-1 grid-rows-1 justify-items-center  gap-y-[8px]">
-        <h1 className="text-3xl font-bold text-[#ffffff]">Sign Up</h1>
-        <p className="text-xs text-[#95959f] sm:text-xs">
+    <div className="grid w-full text-gray-900 grid-cols-1 grid-rows-1 justify-items-center gap-y-10 py-[16vh] px-6 sm:grid sm:justify-center">
+      <div className="grid grid-cols-1 grid-rows-1 justify-items-center gap-y-2">
+        <h1 className="text-3xl font-bold">Sign Up</h1>
+        <p className="text-xs text-slate-500 sm:text-xs">
           Sign up to the platform to get started
         </p>
       </div>
@@ -25,7 +25,7 @@ export default function SignUp() {
         onSubmit={(e) => e.prevertDefault()}
         className="grid-row-1 grid w-full grid-cols-1 justify-items-center sm:w-[420px]"
       >
-        <div className="mb-[16px] flex w-full gap-x-[8px]">
+        <div className="mb-4 flex w-full gap-x-[8px]">
           <FormInput
             label="Firstname"
             type="text"
@@ -41,7 +41,7 @@ export default function SignUp() {
             getValue={(value) => setLastname(value)}
           />
         </div>
-        <div className="mb-[16px] w-full">
+        <div className="mb-4 w-full">
           <FormInput
             label="Username"
             type="text"
@@ -50,7 +50,7 @@ export default function SignUp() {
             getValue={(value) => setUsername(value)}
           />
         </div>
-        <div className="mb-[16px] w-full">
+        <div className="mb-4 w-full">
           <FormInput
             label="Email"
             type="email"
@@ -59,7 +59,7 @@ export default function SignUp() {
             getValue={(value) => setEmail(value)}
           />
         </div>
-        <div className="mb-[16px] flex w-full gap-x-[8px]">
+        <div className="mb-4 flex w-full gap-x-[8px]">
           <FormInput
             label="Password"
             type="password"

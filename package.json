@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tailwind-config-viewer": "tailwind-config-viewer -o"
   },
   "dependencies": {
     "axios": "^1.1.3",
