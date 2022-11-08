@@ -24,3 +24,4 @@ export { Tab } from "./UI/Tab/Tab"
 
 // Icon Library
 export { BiAddToQueue, BiCloudUpload, BiDollarCircle, BiDonateHeart, BiCart } from "react-icons/bi";
+export { RiStarFill } from "react-icons/ri";

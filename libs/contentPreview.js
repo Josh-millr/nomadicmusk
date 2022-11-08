@@ -12,6 +12,8 @@ const uploadSchema = [
     maxMembers: 1000,
     quantityPurchased: 520,
     quantityLeft: 1000,
+    rating: 4,
+    price: 234
   },
   {
     title: "Computational thinking for problem solving",
@@ -26,6 +28,8 @@ const uploadSchema = [
     quantityPurchased: 324,
     quantityLeft: 771,
     availableMembers: 27,
+    rating: 4,
+    price: 234
   },
   {
     title: "Computational thinking for problem solving",
@@ -40,6 +44,8 @@ const uploadSchema = [
     quantityPurchased: 324,
     quantityLeft: 771,
     availableMembers: 27,
+    rating: 4,
+    price: 234
   },
 ];
 

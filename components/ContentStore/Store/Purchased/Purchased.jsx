@@ -17,6 +17,8 @@ export const Purchased = () => {
         fileType,
         quantityPurchased,
         quantityLeft,
+        rating,
+        price,
       },
       index
     ) => (
@@ -33,6 +35,8 @@ export const Purchased = () => {
         duration={duration}
         fileQty={fileQuantity}
         fileType={fileType}
+        rating={rating}
+        price={price}
       />
     )
   );
