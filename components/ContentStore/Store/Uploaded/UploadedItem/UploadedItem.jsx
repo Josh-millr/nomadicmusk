@@ -1,6 +1,6 @@
 import React from "react";
 
-export const UploadedItem = ({}) => {
+export const UploadedItem = ({ details }) => {
   const description =
     "Next.js is an open-source React framework that makes it easier to build production ready react applications by providing multiple features like server side rendering and static site generation  which renders the application on the server";
 
