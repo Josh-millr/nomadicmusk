@@ -36,7 +36,7 @@ export const ContentStore = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:overflow-y-scroll md:border-l-[1px] md:border-[#2f3238]">
+    <div className=" grid grid-cols-1 md:overflow-y-scroll md:border-l-[1px] md:border-[#2f3238]">
       <div className="h-fit border-b-[2px] border-[#151424] dark:border-gray-700 md:ml-[32px]">
         <Tab
           navItems={navItem}

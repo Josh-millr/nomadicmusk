@@ -2,7 +2,7 @@ import { ContentStore, Avatar, Button, BiAddToQueue } from "../components/index"
 
 export default function Account() {
   return (
-    <div className="mx-auto grid w-full grid-cols-1 grid-rows-1 gap-y-[40px] gap-x-5 px-[24px] py-[24px] md:fixed md:h-[100vh] md:grid-cols-2 md:overflow-hidden">
+    <div className="xl:w-[1280px] mx-auto grid grid-cols-1 grid-rows-1 gap-y-[40px] gap-x-5 px-[24px] py-[24px] md:fixed md:h-[100vh] md:grid-cols-2 md:overflow-hidden">
       <div className="grid grid-cols-1 grid-rows-1 gap-y-[16px] pt-[32px] md:h-fit">
         <div className="grid grid-cols-1 grid-rows-1 justify-items-center gap-y-[16px]">
           <Avatar />
