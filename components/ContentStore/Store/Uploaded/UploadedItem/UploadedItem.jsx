@@ -1,18 +1,23 @@
 import React from "react";
 
-export const UploadedItem = ({ details }) => {
-  const description =
-    "Next.js is an open-source React framework that makes it easier to build production ready react applications by providing multiple features like server side rendering and static site generation  which renders the application on the server";
-
+export const UploadedItem = ({
+  title,
+  description,
+  thumbnail,
+  uploaded,
+  duration,
+  fileQty,
+  fileType,
+}) => {
   return (
     <div className="grid w-full grid-cols-1 grid-rows-1 gap-y-4">
       {/* Upload time & Duration */}
       <div className="flex justify-between text-xs">
         <p className="font-bold text-slate-400">
-          Uploaded: <span className="text-slate-900">1st - 11 - 2022</span>
+          Uploaded: <span className="text-slate-900">{uploaded}</span>
         </p>
         <p className="font-bold text-slate-400">
-          Duration: <span className="text-slate-900">20 Hrs</span>
+          Duration: <span className="text-slate-900">{duration}</span>
         </p>
       </div>
 
@@ -23,9 +28,7 @@ export const UploadedItem = ({ details }) => {
 
         {/* Title & Description */}
         <div className="w-fit basis-[auto] ">
-          <h3 className="pb-1 text-sm font-bold">
-            Computational thinking for problem solving
-          </h3>
+          <h3 className="pb-1 text-sm font-bold">{title}</h3>
           <p className="text-xs text-slate-600">
             {description.length > 150
               ? description.substring(0, 150) + ". . ."
@@ -38,11 +41,11 @@ export const UploadedItem = ({ details }) => {
       <div className="flex gap-x-[16px] text-xs text-slate-400">
         <p className="font-bold ">
           File Type:{" "}
-          <span className="pl-[4px] text-blue-500 underline">Video</span>
+          <span className="pl-[4px] text-blue-500 underline">{fileType}</span>
         </p>
         <span className="h-full w-[1px] border-l border-gray-400" />
         <p className="font-bold">
-          File Qty: <span className="text-slate-900">212</span>
+          File Qty: <span className="text-slate-900">{fileQty}</span>
         </p>
       </div>
 

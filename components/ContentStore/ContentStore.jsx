@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  BiWallet,
   BiCloudUpload,
   Tab,
   BiCart,
@@ -47,7 +46,7 @@ export const ContentStore = () => {
           activeSection={currentSection}
         />
       </div>
-      <div className="py-6 md:px-6">
+      <div className="grid w-full grid-cols-1 grid-rows-1 gap-y-4 py-6 md:px-6">
         {navItem.map(
           ({ label, section }) => currentSection === label && section
         )}

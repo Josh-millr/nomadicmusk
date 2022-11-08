@@ -23,4 +23,4 @@ export { Avatar } from "./UI/Avatar/Avatar";
 export { Tab } from "./UI/Tab/Tab"
 
 // Icon Library
-export { BiAddToQueue, BiWallet, BiCloudUpload, BiDollarCircle, BiDonateHeart, BiCart } from "react-icons/bi";
+export { BiAddToQueue, BiCloudUpload, BiDollarCircle, BiDonateHeart, BiCart } from "react-icons/bi";

@@ -1,11 +1,24 @@
 import { UploadedItem } from "./UploadedItem/UploadedItem";
+import data from "../../../../libs/contentPreview.js";
 
 export const Uploaded = () => {
-  return (
-    <div className="w-full grid grid-rows-1 grid-cols-1 gap-y-4">
-      <UploadedItem />
-      <UploadedItem />
-      <UploadedItem />
-    </div>
+  const uploadedPreviewItems = [...data];
+
+  return uploadedPreviewItems.map(
+    (
+      { title, description, uploadDate, fileQuantity, duration, fileType },
+      index
+    ) => (
+      <UploadedItem
+        // thumbnail={""}
+        key={index}
+        title={title}
+        description={description}
+        uploaded={uploadDate}
+        duration={duration}
+        fileQty={fileQuantity}
+        fileType={fileType}
+      />
+    )
   );
 };
