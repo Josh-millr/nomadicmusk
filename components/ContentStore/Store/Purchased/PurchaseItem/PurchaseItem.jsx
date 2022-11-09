@@ -94,7 +94,7 @@ export const PurchaseItem = ({
             </div>
           </div>
         </div>
-        <div className="w-fill grid grid-cols-1 grid-rows-1 gap-y-2 justify-end">
+        <div className="w-fill grid grid-cols-1 grid-rows-1 gap-y-2 justify-items-end">
           <div className="flex">
             <RiStarFill size={16} />
             <RiStarFill size={16} />
