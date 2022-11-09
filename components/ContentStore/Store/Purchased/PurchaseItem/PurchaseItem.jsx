@@ -1,5 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import { RiStarFill } from "../../../../index.js";
+
 export const PurchaseItem = ({
   title,
   description,
@@ -15,6 +17,13 @@ export const PurchaseItem = ({
   fileQty,
   fileType,
 }) => {
+  const addRating = (rateNum) => {
+    const rateStars = [];
+    const starComponent = <RiStarFill size={16} color="orange" />;
+    for (var i = 0; i < rateNum; i++) rateStars.push(starComponent);
+    return rateStars;
+  };
+
   return (
     <div className="grid w-full grid-cols-1 grid-rows-1 gap-y-4">
       {/* Upload time & Duration */}
@@ -30,7 +39,14 @@ export const PurchaseItem = ({
       {/* content thumbnail & Description */}
       <div className="flex gap-x-2">
         {/* Thumbnail */}
-        <div className="h-20 basis-[100px] rounded-xl bg-gray-200"></div>
+        <div className="relative h-20 basis-[100px] rounded-xl bg-gray-200">
+        <Image
+        src={thumbnail}
+        layout="fill"
+        className="rounded-xl"
+        alt="image of man smiling"
+      />
+        </div>
 
         {/* Title & Description */}
         <div className="w-fit basis-[auto] ">
@@ -50,7 +66,7 @@ export const PurchaseItem = ({
             <p className="font-bold text-slate-400">
               Members:{" "}
               <span className="text-slate-900">
-                {availableMembers + "/" + maxMembers}
+                {`${availableMembers}/${maxMembers}`}
               </span>
             </p>
             {/* Divider */}
@@ -94,15 +110,9 @@ export const PurchaseItem = ({
             </div>
           </div>
         </div>
-        <div className="w-fill grid grid-cols-1 grid-rows-1 gap-y-2 justify-items-end">
-          <div className="flex">
-            <RiStarFill size={16} />
-            <RiStarFill size={16} />
-            <RiStarFill size={16} />
-            <RiStarFill size={16} />
-            <RiStarFill size={16} />
-          </div>
-          <div className="h-fit w-fit rounded-full border border-gray-300 bg-gray-100 py-2 px-3">
+        <div className="w-fill grid grid-cols-1 grid-rows-1 justify-items-end gap-y-2">
+          <div className="flex">{addRating(rating)}</div>
+          <div className="h-fit w-fit rounded-full border border-[#56AAE7] bg-[#56AAE729] py-2 px-3">
             {/* Price Tag*/}
             <p className="text-xs font-bold">{`$${price}`}</p>
           </div>

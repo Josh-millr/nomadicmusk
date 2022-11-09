@@ -5,8 +5,8 @@ export default function Account() {
     <div className="text-gray-900 xl:w-[1280px] mx-auto grid grid-cols-1 grid-rows-1 gap-y-10 gap-x-5 px-6 py-[24px] md:fixed md:h-[100vh] md:grid-cols-2 md:overflow-hidden">
       <div className="grid grid-cols-1 grid-rows-1 gap-y-4 pt-[32px] md:h-fit">
         <div className="grid grid-cols-1 grid-rows-1 justify-items-center gap-y-4">
-          <Avatar />
-          <p className="text-sm">joshmillr</p>
+          <Avatar src="/profile.jpg"/>
+          <p className="text-sm">@joshmillr</p>
         </div>
 
         <div className="grid grid-cols-1 grid-rows-1 justify-items-center">

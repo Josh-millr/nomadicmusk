@@ -10,6 +10,7 @@ export const Purchased = () => {
         title,
         description,
         uploadDate,
+        thumbnail,
         fileQuantity,
         maxMembers,
         availableMembers,
@@ -23,7 +24,7 @@ export const Purchased = () => {
       index
     ) => (
       <PurchaseItem
-        // thumbnail={""}
+        thumbnail={thumbnail}
         quantityPurchased={quantityPurchased}
         quantityLeft={quantityLeft}
         maxMembers={maxMembers}

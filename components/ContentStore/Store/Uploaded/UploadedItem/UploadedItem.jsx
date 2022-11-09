@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export const UploadedItem = ({
   title,
@@ -17,14 +18,21 @@ export const UploadedItem = ({
           Uploaded: <span className="text-slate-900">{uploaded}</span>
         </p>
         <p className="font-bold text-slate-400">
-          Duration: <span className="text-slate-900">{duration}</span>
+          Duration: <span className="text-slate-900">{`${duration}hr`}</span>
         </p>
       </div>
 
       {/* content thumbnail & Description */}
       <div className="flex gap-x-2">
         {/* Thumbnail */}
-        <div className="h-20 basis-[100px] rounded-xl bg-gray-200"></div>
+        <div className="relative h-20 basis-[100px] rounded-xl bg-gray-200">
+          <Image
+            src={thumbnail}
+            layout="fill"
+            className="rounded-xl"
+            alt="image of man smiling"
+          />
+        </div>
 
         {/* Title & Description */}
         <div className="w-fit basis-[auto] ">

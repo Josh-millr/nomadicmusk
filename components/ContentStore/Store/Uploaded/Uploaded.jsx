@@ -6,12 +6,20 @@ export const Uploaded = () => {
 
   return uploadedPreviewItems.map(
     (
-      { title, description, uploadDate, fileQuantity, duration, fileType },
+      {
+        title,
+        thumbnail,
+        description,
+        uploadDate,
+        fileQuantity,
+        duration,
+        fileType,
+      },
       index
     ) => (
       <UploadedItem
-        // thumbnail={""}
         key={index}
+        thumbnail={thumbnail}
         title={title}
         description={description}
         uploaded={uploadDate}
