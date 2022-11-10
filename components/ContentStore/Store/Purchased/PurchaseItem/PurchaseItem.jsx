@@ -57,7 +57,7 @@ export const PurchaseItem = ({
           </p>
         </div>
       </div>
-      @{/* Content filetype &  */}
+      {/* Content filetype &  */}
       <div className="flex w-full justify-between text-xs">
         <div className="flex gap-x-4 ">
           <div className="">
