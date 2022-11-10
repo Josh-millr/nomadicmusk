@@ -7,13 +7,9 @@ export default function SignIn() {
   const [password, setPassword] = useState(null);
   const [presistSignin, setPresistSignin] = useState(null);
 
-  // const validateEmail = (email) => {
-  // TODO: Use regular expression to test if the email is in it's correct format
-  // };
-
   const submitSigninForm = async (e) => {
     e.preventDefault();
-    // Send the email credentials to the server for login authentication
+    // Todo: Send the email credentials to the server for login authentication
   };
 
   return (

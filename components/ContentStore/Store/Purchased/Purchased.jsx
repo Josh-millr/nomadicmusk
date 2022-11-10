@@ -16,8 +16,7 @@ export const Purchased = () => {
         availableMembers,
         duration,
         fileType,
-        quantityPurchased,
-        quantityLeft,
+        author,
         rating,
         price,
       },
@@ -25,8 +24,7 @@ export const Purchased = () => {
     ) => (
       <PurchaseItem
         thumbnail={thumbnail}
-        quantityPurchased={quantityPurchased}
-        quantityLeft={quantityLeft}
+        author={author}
         maxMembers={maxMembers}
         availableMembers={availableMembers}
         key={index}

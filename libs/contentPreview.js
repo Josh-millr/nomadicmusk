@@ -1,6 +1,7 @@
 const uploadSchema = [
   {
     title: "Computational thinking for problem solving",
+    author: "Samuel Jackson",
     description:
       "Next.js is an open-source React framework that makes it easier to build production ready react applications by providing multiple features like server side rendering and static site generation  which renders the application on the server",
     thumbnail: "/thumbnail1.webp",
@@ -17,6 +18,7 @@ const uploadSchema = [
   },
   {
     title: "Computational thinking for problem solving",
+    author: "Samuel Jackson",
     description:
       "Next.js is an open-source React framework that makes it easier to build production ready react applications by providing multiple features like server side rendering and static site generation  which renders the application on the server",
     thumbnail: "/thumbnail2.jpg",
@@ -33,6 +35,7 @@ const uploadSchema = [
   },
   {
     title: "Computational thinking for problem solving",
+    author: "Samuel Jackson",
     description:
       "Next.js is an open-source React framework that makes it easier to build production ready react applications by providing multiple features like server side rendering and static site generation  which renders the application on the server",
     thumbnail: "/thumbnail3.jpg",
