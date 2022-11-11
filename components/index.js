@@ -21,7 +21,7 @@ export { TextInput } from "./UI/TextInput/TextInput";
 export { Checkbox } from "./UI/Checkbox/Checkbox";
 export { Avatar } from "./UI/Avatar/Avatar";
 export { Tab } from "./UI/Tab/Tab";
-export { Progressbar } from "./UI/Progressbar/Progressbar";
+export { Progressbar } from "./UI/ProgressBar/ProgressBar";
 
 // Icon Library
 export {

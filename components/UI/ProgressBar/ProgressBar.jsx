@@ -4,7 +4,7 @@ export const Progressbar = ({ quantityPurchased, quantityLeft }) => {
       {/* Purchase Quantity progress bar */}
       <label
         className="mb-1 text-xs font-bold"
-        for="file"
+        htmlFor="file"
       >{`${quantityPurchased}/${quantityLeft} Qty Left`}</label>
       <div className="z-30 h-2 w-[100px] rounded-full bg-gray-200">
         <div
