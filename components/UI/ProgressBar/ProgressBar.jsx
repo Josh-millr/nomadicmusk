@@ -1,4 +1,4 @@
-export const Progresbar = ({ quantityPurchased, quantityLeft }) => {
+export const Progressbar = ({ quantityPurchased, quantityLeft }) => {
   return (
     <div className="">
       {/* Purchase Quantity progress bar */}

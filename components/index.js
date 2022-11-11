@@ -20,8 +20,18 @@ export { Logo } from "./UI/Logo/Logo";
 export { TextInput } from "./UI/TextInput/TextInput";
 export { Checkbox } from "./UI/Checkbox/Checkbox";
 export { Avatar } from "./UI/Avatar/Avatar";
-export { Tab } from "./UI/Tab/Tab"
+export { Tab } from "./UI/Tab/Tab";
+export { Progressbar } from "./UI/Progressbar/Progressbar";
 
 // Icon Library
-export { BiAddToQueue, BiCloudUpload, BiDollarCircle, BiDonateHeart, BiCart } from "react-icons/bi";
+export {
+  BiAddToQueue,
+  BiCloudUpload,
+  BiDollarCircle,
+  BiDonateHeart,
+  BiCart,
+  BiCubeAlt,
+  BiCopyAlt,
+  BiCaretRightCircle,
+} from "react-icons/bi";
 export { RiStarFill } from "react-icons/ri";
