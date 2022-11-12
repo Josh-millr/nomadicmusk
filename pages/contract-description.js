@@ -97,6 +97,19 @@ const ContractDescription = () => {
           <ContractItem prop="Block Number:" value="2342355" />
         </div>
       </div>
+
+      {/* Contract Details */}
+      <div className="py-10">
+        <h1 className="m4-2 text-2xl font-bold">Contract Action</h1>
+        {/* ............................... */}
+        <div className="grid-row-1 grid grid-cols-1 gap-y-6 text-xs text-gray-800 md:gap-y-10 lg:gap-y-20">
+          <div className="grid grid-cols-1 grid-rows-1 gap-y-6">
+            <h3 className="border-b border-gray-300 py-4 font-bold ">
+              Transfer
+            </h3>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -16,11 +16,6 @@
     font-stretch: normal;
     font-style: normal;
     font-variant: normal;
-    overflow-x: hidden;
-  }
-  
-  body {
-    overflow-y: hidden;
   }
 
   h1, h2, h3 {
