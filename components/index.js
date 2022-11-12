@@ -33,5 +33,8 @@ export {
   BiCubeAlt,
   BiCopyAlt,
   BiCaretRightCircle,
+  BiTransferAlt,
+  BiShareAlt,
+  BiTrash,
 } from "react-icons/bi";
 export { RiStarFill } from "react-icons/ri";
