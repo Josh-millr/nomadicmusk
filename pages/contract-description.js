@@ -3,6 +3,9 @@ import {
   BiDollarCircle,
   BiShareAlt,
   BiTrash,
+  BiShieldAlt2,
+  BiShowAlt,
+  BiBlock,
 } from "../components/index";
 
 const ContractActionButton = ({ label, icon: Icon }) => {
@@ -117,15 +120,16 @@ const ContractDescription = () => {
 
       {/* Contract Details */}
       <div className="py-10">
-        <h1 className="m4-2 text-2xl font-bold">Contract Action</h1>
+        <h1 className="mb-6 text-2xl font-bold">Contract Action</h1>
         {/* ............................... */}
-        <div className="grid-row-1 grid grid-cols-1 gap-y-6 text-xs text-gray-800 md:gap-y-10 lg:gap-y-20">
+        <div className="grid-row-1 grid grid-cols-1 gap-y-6 text-xs text-gray-800 md:gap-y-10">
+          {/* Contract List 1 */}
           <div className="grid grid-cols-1 grid-rows-1 gap-y-6">
-            <h3 className="border-b border-gray-300 py-4 font-bold ">
+            <h3 className="border-b border-gray-300 py-4 text-sm font-bold ">
               Transfer
             </h3>
             {/* Contract Table */}
-            <div className="grid w-full grid-cols-1 grid-rows-1 gap-x-4 text-xs text-gray-800 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid w-full grid-cols-1 grid-rows-1 gap-x-4 border-b border-gray-300 text-xs text-gray-800 sm:grid-cols-2 lg:grid-cols-3">
               <ContractDescItem
                 title="Transferable"
                 desc="Ability to transfer the ownership of the content plus its
@@ -142,30 +146,155 @@ const ContractDescription = () => {
               />
               {/* Item 3 */}
               <ContractDescItem
-                title="Resellable:"
-                desc="The ability to resell the content plus its contract to another user."
-                icon={BiTransferAlt}
-                value="True"
-              />
-              {/* Item 4 */}
-              <ContractDescItem
-                title="Max Resell:"
-                desc="Ability to extend the contract on reselling."
-                icon={BiTransferAlt}
-                value="True"
-              />
-              {/* Item 5 */}
-              <ContractDescItem
                 title="Extend contract on Transfer:"
                 desc="The ability to extend the contract while transfering to a new user."
                 icon={BiTransferAlt}
                 value="True"
               />
-              {/* Item 6 */}
+            </div>
+          </div>
+
+          {/* Contract List 2 */}
+          <div className="grid grid-cols-1 grid-rows-1 gap-y-6">
+            <h3 className="border-b border-gray-300 py-4 text-sm font-bold ">
+              Resell
+            </h3>
+            {/* Contract Table */}
+            <div className="grid w-full grid-cols-1 grid-rows-1 gap-x-4 border-b border-gray-300 text-xs text-gray-800 sm:grid-cols-2 lg:grid-cols-3">
+              {/* Item 1 */}
+              <ContractDescItem
+                title="Resellable:"
+                desc="The ability to resell the content plus its contract to another user."
+                icon={BiDollarCircle}
+                value="True"
+              />
+              {/* Item 2 */}
+              <ContractDescItem
+                title="Max Resell:"
+                desc="Ability to extend the contract on reselling."
+                icon={BiDollarCircle}
+                value="True"
+              />
+
+              {/* Item 3 */}
               <ContractDescItem
                 title="Extend contract on Resell:"
                 desc="The ability to extend the contract while Reselling to a new user."
-                icon={BiTransferAlt}
+                icon={BiDollarCircle}
+                value="True"
+              />
+            </div>
+          </div>
+
+          {/* Contract List 3 */}
+          <div className="grid grid-cols-1 grid-rows-1 gap-y-6">
+            <h3 className="border-b border-gray-300 py-4 text-sm font-bold">
+              Share
+            </h3>
+            {/* Contract Table */}
+            <div className="grid w-full grid-cols-1 grid-rows-1 gap-x-4 border-b border-gray-300 text-xs text-gray-800 sm:grid-cols-2 lg:grid-cols-3">
+              <ContractDescItem
+                title="Share"
+                desc="Ability to share ownership of the content plus its contract (dual ownership)"
+                icon={BiShareAlt}
+                value="True"
+              />
+              {/* Item 2 */}
+              <ContractDescItem
+                title="Max Share:"
+                desc="The maximum amout of people you can share the content with."
+                icon={BiShareAlt}
+                value="True"
+              />
+              {/* Item 3 */}
+              <ContractDescItem
+                title="Extend contract on Share:"
+                desc="The ability to extend the contract while sharing to new users."
+                icon={BiShareAlt}
+                value="True"
+              />
+            </div>
+          </div>
+
+          {/* Contract List 4 */}
+          <div className="font-sm grid grid-cols-1 grid-rows-1 gap-y-6">
+            <h3 className="border-b border-gray-300 py-4 text-sm font-bold ">
+              Ownership
+            </h3>
+            {/* Contract Table */}
+            <div className="grid w-full grid-cols-1 grid-rows-1 gap-x-4 border-b border-gray-300 text-xs text-gray-800 sm:grid-cols-2">
+              <ContractDescItem
+                title="Permanent Ownership:"
+                desc="Ability to share ownership of the content plus its contract (dual ownership)"
+                icon={BiShieldAlt2}
+                value="True"
+              />
+              {/* Item 2 */}
+              <ContractDescItem
+                title="Own till:"
+                desc="The maximum amout of people you can share the content with."
+                icon={BiShieldAlt2}
+                value="True"
+              />
+            </div>
+          </div>
+
+          {/* Contract List 5 */}
+          <div className="grid grid-cols-1 grid-rows-1 gap-y-6">
+            <h3 className="border-b border-gray-300 py-4 text-sm font-bold">
+              Readable
+            </h3>
+            {/* Contract Table */}
+            <div className="grid w-full grid-cols-1 grid-rows-1 gap-x-4 border-b border-gray-300 text-xs text-gray-800 sm:grid-cols-2 lg:grid-cols-3">
+              <ContractDescItem
+                title="Always Readable:"
+                desc="Ability to transfer the ownership of the content plus its
+                  contract to another user."
+                icon={BiShowAlt}
+                value="True"
+              />
+              {/* Item 2 */}
+              <ContractDescItem
+                title="Periodic Readability:"
+                desc="The maximum amout of times the content plus its contract can we transfered to a new owner/user."
+                icon={BiShowAlt}
+                value="mon, tue, web"
+              />
+              {/* Item 3 */}
+              <ContractDescItem
+                title="Readable till:"
+                desc="The ability to resell the content plus its contract to another user."
+                icon={BiShowAlt}
+                value="June 6th 2022"
+              />
+            </div>
+          </div>
+
+          {/* Contract List 6 */}
+          <div className="grid grid-cols-1 grid-rows-1 gap-y-6">
+            <h3 className="border-b border-gray-300 py-4 font-bold ">
+              Restrictions
+            </h3>
+            {/* Contract Table */}
+            <div className="grid w-full grid-cols-1 grid-rows-1 gap-x-4 border-b border-gray-300 text-xs text-gray-800 sm:grid-cols-2 lg:grid-cols-3">
+              <ContractDescItem
+                title="Min Age:"
+                desc="The minimum age capable of viewing this content."
+                icon={BiBlock}
+                value="True"
+              />
+              {/* Item 2 */}
+              <ContractDescItem
+                title="Max Age:"
+                desc="The maximum age capable of viewing this content."
+                icon={BiBlock}
+                value="True"
+              />
+              {/* Item 3 */}
+              <ContractDescItem
+                title="Restricted Country/s:"
+                desc="List of countries where your content is restricted."
+                icon={BiBlock}
                 value="True"
               />
             </div>
