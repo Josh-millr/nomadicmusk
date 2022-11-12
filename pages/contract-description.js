@@ -35,7 +35,41 @@ const ContractDescription = () => {
       </div>
 
       {/* Contract Current Info */}
-      
+      <div className="items-center gap-x-2 border-b border-zinc-200 lg:flex lg:justify-between">
+        <div className="flex flex-wrap items-center gap-x-4  gap-y-2 border-b border-zinc-200 py-4 lg:border-none ">
+          {/* Creators Name */}
+          <div className="flex items-center gap-x-2">
+            <p className="my-auto text-xs font-bold">Creator:</p>
+            <div className="flex h-fit w-fit justify-items-center gap-x-1 rounded-full border border-gray-300 px-4 py-2 text-gray-700">
+              <p className="whitespace-nowrap text-xs font-bold">
+                Samuel Mike Jr.
+              </p>
+            </div>
+          </div>
+          {/* Creation Date */}
+          <div className="flex items-center gap-x-2">
+            <p className="my-auto text-xs font-bold">Creation Date:</p>
+            <div className="flex h-fit w-fit justify-items-center gap-x-1 rounded-full border border-gray-300 px-4 py-2 text-gray-700">
+              <p className="whitespace-nowrap text-xs font-bold">
+                Aug 6th, 2022
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-wrap py-4">
+          {/* Sharing */}
+          <div className="flex gap-x-2">
+            <p className="my-auto whitespace-nowrap text-xs font-bold">
+              Sharing:
+            </p>
+            <div className="flex h-fit w-fit justify-items-center gap-x-1 rounded-full border border-gray-300 px-4 py-2 text-gray-700">
+              <p className="whitespace-nowrap text-xs font-bold">
+                3 Participants
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
