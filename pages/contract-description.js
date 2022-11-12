@@ -26,6 +26,23 @@ const ContractItem = ({ prop, value }) => {
     </div>
   );
 };
+const ContractDescItem = ({ title, desc, icon: Icon, value }) => {
+  return (
+    <div className="grid grid-cols-1 grid-rows-1 gap-y-2 py-4">
+      <div className="flex items-center gap-x-4">
+        <div className="flex gap-x-2">
+          <Icon size={20} />
+          <p className="font-bold">{title}</p>
+        </div>
+        <div className="flex h-fit w-fit justify-items-center rounded-full bg-gray-300 px-4 py-2 text-gray-900">
+          <p className="whitespace-nowrap text-xs font-bold">{value}</p>
+        </div>
+      </div>
+      <p className="">{desc}</p>
+    </div>
+  );
+};
+
 const ContractDescription = () => {
   return (
     <div className="px-6 md:px-10 lg:px-20">
@@ -107,6 +124,51 @@ const ContractDescription = () => {
             <h3 className="border-b border-gray-300 py-4 font-bold ">
               Transfer
             </h3>
+            {/* Contract Table */}
+            <div className="grid w-full grid-cols-1 grid-rows-1 gap-x-4 text-xs text-gray-800 sm:grid-cols-2 lg:grid-cols-3">
+              <ContractDescItem
+                title="Transferable"
+                desc="Ability to transfer the ownership of the content plus its
+                  contract to another user."
+                icon={BiTransferAlt}
+                value="True"
+              />
+              {/* Item 2 */}
+              <ContractDescItem
+                title="Max Transferable:"
+                desc="The maximum amout of times the content plus its contract can we transfered to a new owner/user."
+                icon={BiTransferAlt}
+                value="True"
+              />
+              {/* Item 3 */}
+              <ContractDescItem
+                title="Resellable:"
+                desc="The ability to resell the content plus its contract to another user."
+                icon={BiTransferAlt}
+                value="True"
+              />
+              {/* Item 4 */}
+              <ContractDescItem
+                title="Max Resell:"
+                desc="Ability to extend the contract on reselling."
+                icon={BiTransferAlt}
+                value="True"
+              />
+              {/* Item 5 */}
+              <ContractDescItem
+                title="Extend contract on Transfer:"
+                desc="The ability to extend the contract while transfering to a new user."
+                icon={BiTransferAlt}
+                value="True"
+              />
+              {/* Item 6 */}
+              <ContractDescItem
+                title="Extend contract on Resell:"
+                desc="The ability to extend the contract while Reselling to a new user."
+                icon={BiTransferAlt}
+                value="True"
+              />
+            </div>
           </div>
         </div>
       </div>
