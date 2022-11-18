@@ -1,7 +1,7 @@
-import { TextInput } from "../index";
+import { TextArea } from "../index";
 
-export const FormInput = ({
-  type,
+export const FormTextArea = ({
+  id,
   placeholder,
   required,
   getValue,
@@ -9,16 +9,16 @@ export const FormInput = ({
   label,
 }) => {
   return (
-    <div className="grid grow grid-cols-1 grid-rows-1">
+    <div className="grid grow grid-cols-1 grid-rows-1 gap-y-2">
       <label
-        htmlFor={type}
-        className="mb-2 block whitespace-nowrap text-sm font-medium"
+        htmlFor={id}
+        className="block whitespace-nowrap text-sm font-medium"
       >
         {label}
       </label>
-      <TextInput
+      <TextArea
+        id={id}
         value={setValue}
-        type={type}
         placeholder={placeholder}
         required={required}
         getValue={getValue}
